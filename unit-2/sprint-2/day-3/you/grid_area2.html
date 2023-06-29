@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid_area2</title>
+    <style>
+        body{
+            background-color: black;
+        }
+   #parent{
+    display: grid;
+    margin: auto;
+    gap: 20px;
+    width: 80%;
+     height: 280px;
+    margin-top: 20px;
+    padding: 50px 50px 100px 50px; 
+    background-color: white;
+
+    grid-template-areas: "one one two five"
+                         "three four two five"
+   }
+      
+   
+   #parent>div{
+      
+     border-radius: 20px;
+     padding: 50px;
+     font-size: 40px;
+     color: white; /* this color working on font*/
+     background-color: grey;
+   } 
+
+   #parent>div:nth-child()
+   {
+    /* background-color: grey; */
+    /* this is used direct target to individual child or element in side that child */
+   }
+
+   #parent > div:nth-child(1)
+   {
+      /* background-color: grey; */
+      grid-area:one;
+      
+     
+   }
+   #parent > div:nth-child(2){
+      /* background-color: grey; */
+      grid-area:two;
+   }
+   #parent > div:nth-child(3){
+      /* background-color: grey; */
+      grid-area:three;
+   }
+   #parent > div:nth-child(4){
+      /* background-color: grey; */
+      grid-area:four;
+   }
+   #parent > div:nth-child(5){
+      /* background-color: grey; */
+      grid-area:five;
+   }
+  
+
+    </style>
+</head>
+<body>
+
+    <div id="parent">
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    <div>D</div>
+    <div>E</div>
+    </div>
+
+</body>
+</html>

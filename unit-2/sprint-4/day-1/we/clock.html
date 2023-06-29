@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock_Assignment</title>
+
+    <style>
+    #cont{
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       margin: auto;
+       border: 2px solid black;
+       width: 10%;
+    }
+     #cont div:nth-child(1)
+      {
+          background-color:rgb(250, 94, 94);
+          /* position: relative;
+          left: 20px; */
+      }
+
+      #cont div:nth-child(2)
+      {
+          background-color:white;
+      }
+      #cont div:nth-child(3)
+      {
+          background-color:green;
+      }
+
+    </style>
+</head>
+<body>
+    
+    <!-- <h1 id="head1">0</h1>
+    <h1 id="head2">0</h1>
+    <h1 id="head3">0</h1> -->
+
+
+
+     <div id="cont">
+
+        <div> <h1 id="head1">00</h1></div>
+        <div> <h1 id="head2">00</h1> </div>
+        <div>  <h1 id="head3">00</h1> </div>
+
+
+        <!-- <h1 id="head1">00</h1>
+        <h1 id="head2">00</h1>
+        <h1 id="head3">00</h1> -->
+     </div>
+
+
+
+
+</body>
+</html>
+<script>
+        let head1=document.getElementById("head1");
+        let head2=document.getElementById("head2");
+        let head3=document.getElementById("head3");
+
+        let hour=0;
+        let min=0;
+        let sec=0;
+
+        setInterval(function(){
+          
+            sec++;
+            head3.innerText=sec;
+            if(sec==60)
+            {
+                 min++;
+                 head2.innerText=min;
+                 sec=0;
+
+                 if(min==60)
+                 {
+                    hour++;
+                    head1.innerText=hour;
+                    min=0;
+                    if(hour==24)
+                    {
+                        hour=0;
+                    }
+                }
+
+            }
+
+        },1000)
+
+
+</script>

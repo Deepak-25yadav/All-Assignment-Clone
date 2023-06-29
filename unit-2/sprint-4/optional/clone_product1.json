@@ -1,0 +1,55 @@
+{
+    "product1":[
+
+       {
+        "image":"https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/71MAeBt0NUL._AC._SR360,460.jpg",
+        "description":"Olive Green Poly Crepe Botanical Print Crop Top with Dhoti With Attached Dupatta",
+        "price":"₹400",
+        "discount":"25% OFF",
+        "category":"women",
+        "id":"1"
+       }
+
+
+
+      {
+        "image":"https://img.gkbcdn.com/p/2019-11-16/i100000-pro1-bluetooth-5-0-tws-earphones-used-independently-1574132876970._w280_p1_.jpg",
+       "price":"$200",
+       "discount":"25% OFF"
+      },
+
+      {
+        "image":"https://img.gkbcdn.com/p/2022-10-19/Powkiddy-RGB20S-Handheld-Game-Console-16-128GB-White-517975-0._w280_p1_.jpg",
+       "price":"$200",
+       "discount":"25% OFF"
+      },
+      
+      {
+        "image":"https://img.gkbcdn.com/p/2022-11-26/Winben-Anti-Gravity-Levitating-Water-Drop-Humidifier-White-518446-1._w280_p1_.jpg",
+       "price":"$200",
+       "discount":"25% OFF"
+      },
+      {
+        "image":"https://img.gkbcdn.com/p/2022-11-12/SUNUO-C3-PRO-Smart-Visual-Oral-Irrigator-Dental-Washer-Green-518247-0._w280_p1_.jpg",
+       "price":"$200",
+       "discount":"25% OFF"
+      },
+      {
+        "image":"https://img.gkbcdn.com/p/2022-04-14/X9-Plus-Laptop-Core-i5-8279U-8GB-128GB-499621-0._w280_p1_.jpg",
+       "price":"$200",
+       "discount":"25% OFF"
+      },
+      {
+        "image":"https://img.gkbcdn.com/p/2022-06-30/5-0-Inch-IPS-TYPE-C-Secondary-Screen-CPU-GPU-RAM-HDD-Monitoring-White-507214-0._w280_p1_.jpg",
+       "price":"$200",
+       "discount":"25% OFF"
+      },
+      {
+        "image":"https://img.gkbcdn.com/p/2022-08-12/FLEXTAILGEA-Tiny-Pump-X-3-in-1-Air-Pump--Air-Compressor-with-LED-Light-514044-0._w280_p1_.jpg",
+       "price":"$200",
+       "discount":"25% OFF"
+      }
+
+
+    ]
+}

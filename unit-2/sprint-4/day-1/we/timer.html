@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise_timer</title>
+</head>
+<body>
+    
+<input type="number" id="timer" placeholder="enter time in ms">
+
+<button id="btn">Click </button>
+
+</body>
+
+<script>
+    let btn=document.getElementById("btn");
+let timer=document.getElementById("timer");
+let ms=timer.value;
+
+btn.addEventListener("click",()=>{
+
+    waitPromise(ms);
+})
+    
+
+function waitPromise(ms){
+
+ let promise= new Promise((resolve,reject)=>{
+      
+    setTimeout(()=>{
+   resolve("Hii ,How are You")
+   reject("why reject");
+
+    },ms)
+ })
+
+ .then((res)=>{
+    alert(res);
+ })
+ .catch((err)=>{
+    alert(err);
+ })
+}
+// waitPromise(ms);
+</script>
+</html>

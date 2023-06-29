@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise</title>
+
+
+    <style>
+        * {
+            /* margin: 0px;
+            padding: 0px; */
+        }
+
+        #top {
+
+            display: flex;
+            width: 90%;
+            margin: auto;
+            border: 2px solid red;
+            justify-content: space-between;
+
+        }
+
+        #top>div:nth-child(2)>img {
+            width: 100%
+        }
+
+        /* #top>div>:nth-child(1)>h1,p{
+            text-align: center;  
+        } */
+
+        #top>div {
+            border: 2px solid green;
+            width: 48%
+        }
+
+        /* #mid>div:nth-child(1)>h1,p{
+            text-align: center;
+        } */
+
+        #mid {
+            width: 90%;
+            margin: auto;
+            border: 4px dashed brown;
+        }
+
+        #mid>div:nth-child(1) {
+            text-align: center;
+            border: 2px solid yellow;
+            margin: 0;
+            padding: 0;
+            line-height: 10px;
+        }
+
+        #mid>div:nth-child(2) {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            border: 2px solid blue;
+            /* width: 90%; */
+            margin: auto;
+            gap: 10px;
+
+        }
+
+        #mid>div:nth-child(2)>div {
+            border: solid 2px orangered;
+            background-color: aqua;
+            color: white;
+            text-align: center;
+        }
+
+        #mid>div:nth-child(2)>div>img {
+            width: 100%;
+        }
+
+        /* #mid>div:nth-child(2)>div>h3,p,img{
+            text
+        } */
+
+        #bottom{
+            width: 90%;
+            border:3px dashed rgb(118, 11, 29);
+            margin: auto;
+        }
+
+        #bottom>div:nth-child(1){
+             text-align: center;
+             border: 2px solid yellowgreen;
+        }
+
+        #bottom>div:nth-child(2)
+        {
+            display: grid;
+            grid-template-columns:repeat(4,1fr);
+            gap: 10px;
+            border: 2px solid rgb(104, 50, 205);
+        }
+         #bottom>div:nth-child(2)>div{
+            text-align: center;
+         }
+         #bottom>div:nth-child(2)>div>img{
+            width:100%
+         }
+
+
+        @media all and (min-width:601px) and (max-width:1100px) {
+
+            /* Medium screeen style  */
+            #top {
+                flex-direction: column;
+            }
+
+            #top>div {
+                width: 100%;
+            }
+
+
+            #mid>div:nth-child(2) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                border: 2px solid blue;
+                /* width: 90%; */
+                margin: auto;
+                gap: 10px;
+
+            }
+
+
+            #bottom>div:nth-child(2)
+        {
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+            gap: 10px;
+            border: 2px solid rgb(104, 50, 205);
+            margin: auto;
+        }
+    }
+        
+
+        @media all and (min-width:200px) and (max-width:601px) {
+            /* small screen style  */
+
+            #top {
+                flex-direction: column;
+            }
+
+            #top>div {
+                width: 100%;
+            }
+
+
+            #bottom>div:nth-child(2)
+        {
+            display: grid;
+            grid-template-columns:repeat(1,1fr);
+            gap: 10px;
+            border: 2px solid rgb(104, 50, 205);
+            margin: auto;
+        }
+         
+
+
+        #mid>div:nth-child(2) {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                border: 2px solid blue;
+                /* width: 90%; */
+                margin: auto;
+                gap: 10px;
+
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="top">
+        <!-- Two divs should be inside here  -->
+        <div>
+            <h1>Sobre a Platform de Gestao MarketUp</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem excepturi possimus totam ratione aut
+                laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, rerum. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Corporis, odit?
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iusto eum, reiciendis in fuga saepe ab
+                facere molestias sit sed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, ducimus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illum eaque, quaerat et sed saepe
+                esse accusantium harum voluptate nulla?</p>
+        </div>
+
+        <div>
+            <img src="https://fpf.org/wp-content/uploads/2018/01/Smart-TV.jpg" alt="">
+        </div>
+
+
+
+    </div>
+
+    <div id="mid">
+        <!-- Two divs should be inside here and on the second div you have to put 8 cards  -->
+
+        <div>
+            <h1>Recorsos Relacionados</h1>
+            <p>Impulsione ainda mais o seu negoicio com as ferramentas que </p>
+            <p>o ERP MarketUP oferece para sua empresa</p>
+        </div>
+
+
+        <div>
+            <div><img
+                    src="https://w7.pngwing.com/pngs/69/868/png-transparent-handshake-drawing-handshake-angle-white-text-thumbnail.png"
+                    alt="">
+                <h3>Para suas vendas</h3>
+                <p>Frente de caixa(PDV)</p>
+                <p>Loja Virtual </p>
+                <p>Pedidos</p>
+            </div>
+            <div><img
+                    src="https://w7.pngwing.com/pngs/69/868/png-transparent-handshake-drawing-handshake-angle-white-text-thumbnail.png"
+                    alt="">
+                <h3>Para suas vendas</h3>
+                <p>Frente de caixa(PDV)</p>
+                <p>Loja Virtual </p>
+                <p>Pedidos</p>
+            </div>
+            <div><img
+                    src="https://w7.pngwing.com/pngs/69/868/png-transparent-handshake-drawing-handshake-angle-white-text-thumbnail.png"
+                    alt="">
+                <h3>Para suas vendas</h3>
+                <p>Frente de caixa(PDV)</p>
+                <p>Loja Virtual </p>
+                <p>Pedidos</p>
+            </div>
+            <div><img
+                    src="https://w7.pngwing.com/pngs/69/868/png-transparent-handshake-drawing-handshake-angle-white-text-thumbnail.png"
+                    alt="">
+                <h3>Para suas vendas</h3>
+                <p>Frente de caixa(PDV)</p>
+                <p>Loja Virtual </p>
+                <p>Pedidos</p>
+            </div>
+            <div><img
+                    src="https://w7.pngwing.com/pngs/69/868/png-transparent-handshake-drawing-handshake-angle-white-text-thumbnail.png"
+                    alt="">
+                <h3>Para suas vendas</h3>
+                <p>Frente de caixa(PDV)</p>
+                <p>Loja Virtual </p>
+                <p>Pedidos</p>
+            </div>
+            <div><img
+                    src="https://w7.pngwing.com/pngs/69/868/png-transparent-handshake-drawing-handshake-angle-white-text-thumbnail.png"
+                    alt="">
+                <h3>Para suas vendas</h3>
+                <p>Frente de caixa(PDV)</p>
+                <p>Loja Virtual </p>
+                <p>Pedidos</p>
+            </div>
+            <div><img
+                    src="https://w7.pngwing.com/pngs/69/868/png-transparent-handshake-drawing-handshake-angle-white-text-thumbnail.png"
+                    alt="">
+                <h3>Para suas vendas</h3>
+                <p>Frente de caixa(PDV)</p>
+                <p>Loja Virtual </p>
+                <p>Pedidos</p>
+            </div>
+            <div><img
+                    src="https://w7.pngwing.com/pngs/69/868/png-transparent-handshake-drawing-handshake-angle-white-text-thumbnail.png"
+                    alt="">
+                <h3>Para suas vendas</h3>
+                <p>Frente de caixa(PDV)</p>
+                <p>Loja Virtual </p>
+                <p>Pedidos</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div id="bottom">
+        <!-- Two divs should be inside here and on the second div you have to put 4 cards  -->
+
+        <div>
+            <h1>Conheca nossos segmentos</h1>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+
+
+        <div>
+            <div><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRykcokBtR5MR9HWgw2TwYUcYi53AyBe8VSLQ&usqp=CAU"
+                    alt="">
+                <h3>Lorem ipsum dolor sit amet.</h3> <button>SAIBA MAIS</button>
+            </div>
+            <div><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRykcokBtR5MR9HWgw2TwYUcYi53AyBe8VSLQ&usqp=CAU"
+                    alt="">
+                <h3>Lorem ipsum dolor sit amet.</h3> <button>SAIBA MAIS</button>
+            </div>
+            <div><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRykcokBtR5MR9HWgw2TwYUcYi53AyBe8VSLQ&usqp=CAU"
+                    alt="">
+                <h3>Lorem ipsum dolor sit amet.</h3> <button>SAIBA MAIS</button>
+            </div>
+            <div><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRykcokBtR5MR9HWgw2TwYUcYi53AyBe8VSLQ&usqp=CAU"
+                    alt="">
+                <h3>Lorem ipsum dolor sit amet.</h3> <button>SAIBA MAIS</button>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

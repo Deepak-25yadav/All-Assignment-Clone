@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web-101 C2</title>
+  <style>
+    /* Write all necessery styles here  */
+
+    
+       #container>#top>p{
+        text-align: center;
+       }
+    #container {
+      width: 100%;
+      /* border: 4px dashed orangered; */
+    }
+
+    #container h1 {
+      text-align: center;
+    }
+
+
+    #top>div {
+      display: flex;
+      /* border: 2px solid red; */
+      width: 90%;
+      margin: auto;
+      justify-content: space-between;
+
+
+    }
+
+    #top>div>div:nth-child(1) {
+      /* border: 2px solid blue; */
+      width: 47%;
+      /* margin:0px;
+      padding:0px; */
+    }
+
+    #container>#top>div>div:nth-child(1)>p {
+      margin: 0px;
+      padding: 0px;
+    }
+
+
+    #top>div img {
+
+      width: 100%;
+    }
+
+    #top>div>div:nth-child(2) {
+      /* border: 2px solid green; */
+      width: 47%;
+    }
+
+    /* MIDDLE PART START FROM HERE */
+    #container>#mid>p{
+        text-align: center;
+       }
+
+    #mid>div {
+      /* border: 2px dashed yellow; */
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 90%;
+      margin: auto;
+      gap: 15px;
+
+    }
+
+    #mid>div img {
+      width: 20%;
+    }
+
+    #mid>div>div:nth-child(1) {
+      padding: 20px;
+      background-color: grey;
+    }
+
+    #mid>div>div:nth-child(2) {
+      padding: 20px;
+      background-color: grey;
+    }
+
+    #mid>div>div:nth-child(3) {
+      padding: 20px;
+      background-color: grey;
+    }
+
+    #mid>div>div:nth-child(4) {
+      padding: 20px;
+      background-color: grey;
+    }
+
+    #mid>div>div:nth-child(5) {
+      padding: 20px;
+      background-color: grey;
+    }
+
+    #mid>div>div:nth-child(6) {
+      padding: 20px;
+      background-color: grey;
+    }
+
+
+    /* BOTTOM PART START HERE */
+    #container>#bottom>p{
+        text-align: center;
+       }
+
+    #bottom>div{
+      /* border: 4px dashed black; */
+      display: grid;
+      grid-template-columns:repeat(3,1fr);
+      margin: auto;
+      width:90%;
+      gap:15px;
+
+    }
+    #bottom>div h3{
+       position: relative;
+       left: 40px;
+       top: 20px;
+    }
+
+
+
+
+
+
+    @media all and (min-width:601px) and (max-width:900px) {
+
+      /* Medium screen style */
+
+
+      /* TOP POSITION */
+      #top>div {
+        flex-direction: column;
+      }
+      #top>div>div:nth-child(1) {
+        width: 100%;
+      }
+      #top>div>div:nth-child(2) {
+        width: 100%;
+      }
+
+      /* MIDDLE POSITION */
+
+      #mid>div {
+        /* border: 2px dashed yellow; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        margin: auto;
+        gap: 15px;
+
+      }
+
+      /* BOTTOM POSITION */
+
+      #bottom>div{
+      /* border: 4px dashed black; */
+      display: grid;
+      grid-template-columns:repeat(2,1fr);
+      margin: auto;
+      width:90%;
+      gap:15px;
+
+    }
+
+
+
+
+    }
+
+
+
+    @media all and (min-width:320px) and (max-width:600px) {
+      /* Small screen style */
+
+      /* TOP POSITION */
+      #top>div {
+        flex-direction: column;
+      }
+
+      #top>div>div:nth-child(1) {
+        width: 100%;
+      }
+
+      #top>div>div:nth-child(2) {
+        width: 100%;
+      }
+
+      /* MIDDLE POSITION */
+
+      #mid>div {
+        /* border: 2px dashed yellow; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+        margin: auto;
+        gap: 15px;
+
+      }
+
+      /* BOTTOM POSITION */
+
+      #bottom>div{
+      /* border: 4px dashed black; */
+      display: grid;
+      grid-template-columns:repeat(1,1fr);
+      margin: auto;
+      width:90%;
+      gap:15px;
+
+    }
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="top">
+      <h1>Trillo Workbench</h1>
+      <p>Server-side Low-code Platform</p>
+      <div>
+        <!-- Here should be one div for the text part and one image. Use flex to create the layout  -->
+        <div>
+          <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum reiciendis molestias natus fuga
+            aspernatur fugit corporis assumenda illum, tempore possimus.</h2>
+          <h3>90% Cost and Time saving</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius voluptas itaque ea et dignissimos id vel
+            quos minus veritatis quam, consequatur ipsum nihil aliquid aut minima eos neque eligendi fuga non dolorum
+            eveniet molestiae aspernatur. Sequi ipsa maxime, officiis aliquid itaque perspiciatis omnis laudantium eos
+            fuga eveniet fugiat obcaecati quae.</p>
+          <h3>How TrilloWorkbench achieves 90% saving</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore repudiandae ab ea autem asperiores veniam
+            necessitatibus aliquam sequi delectus velit tenetur, nam deleniti voluptate, consequatur architecto
+            perferendis tempora cupiditate. Laborum ipsam dolorum cum porro, deleniti, molestias iusto, earum dolore
+            error excepturi cupiditate quos? Doloremque dolorem sit hic suscipit aliquid laboriosam?</p>
+        </div>
+
+
+        <div>
+          <img src="https://www.trillo.io/wp-content/uploads/2022/04/trillo-Workbench-UI-Macbook.png"
+            alt="image not found">
+        </div>
+
+      </div>
+    </div>
+
+    <div id="mid">
+      <h1>Trillo Applications</h1>
+      <p>
+        Trillo Applications are customizable end-to-end applications (Open
+        Source Code). The can be used out of the box or extended.
+      </p>
+      <div>
+        <!-- Here you should have 6 children divs. Use grid to create the layout -->
+
+        <div><img
+            src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-11-22/Screenshot%202022-11-22%20at%2012.29.09%20PM_869111.png"
+            alt="image not found">
+          <h3>Trillo Text Matching</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aut tempore sint quod deserunt corrupti
+            ullam doloremque, repellat ducimus itaque velit architecto corporis est aliquam quis illum quas consequatur
+            commodi?</p>
+        </div>
+        <div><img
+            src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-11-22/Screenshot%202022-11-22%20at%2012.29.09%20PM_869111.png"
+            alt="image not found">
+          <h3>Trillo Text Matching</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aut tempore sint quod deserunt corrupti
+            ullam doloremque, repellat ducimus itaque velit architecto corporis est aliquam quis illum quas consequatur
+            commodi?</p>
+        </div>
+        <div><img
+            src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-11-22/Screenshot%202022-11-22%20at%2012.29.09%20PM_869111.png"
+            alt="image not found">
+          <h3>Trillo Text Matching</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aut tempore sint quod deserunt corrupti
+            ullam doloremque, repellat ducimus itaque velit architecto corporis est aliquam quis illum quas consequatur
+            commodi?</p>
+        </div>
+        <div><img
+            src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-11-22/Screenshot%202022-11-22%20at%2012.29.09%20PM_869111.png"
+            alt="image not found">
+          <h3>Trillo Text Matching</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aut tempore sint quod deserunt corrupti
+            ullam doloremque, repellat ducimus itaque velit architecto corporis est aliquam quis illum quas consequatur
+            commodi?</p>
+        </div>
+        <div><img
+            src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-11-22/Screenshot%202022-11-22%20at%2012.29.09%20PM_869111.png"
+            alt="image not found">
+          <h3>Trillo Text Matching</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aut tempore sint quod deserunt corrupti
+            ullam doloremque, repellat ducimus itaque velit architecto corporis est aliquam quis illum quas consequatur
+            commodi?</p>
+        </div>
+        <div><img
+            src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-11-22/Screenshot%202022-11-22%20at%2012.29.09%20PM_869111.png"
+            alt="image not found">
+          <h3>Trillo Text Matching</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aut tempore sint quod deserunt corrupti
+            ullam doloremque, repellat ducimus itaque velit architecto corporis est aliquam quis illum quas consequatur
+            commodi?</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="bottom">
+      <h1>Use Cases</h1>
+      <p>
+        Trillo has readymade templates for several use cases that can be
+        customized quickly to deliver the solutions as per your requirements.
+        Some of these templates are described below.
+      </p>
+      <div>
+        <!-- Here you should have 6 children divs. Use grid to create the layout -->
+        <div>
+          <h3>Data Warehouse</h3>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Data Warehouse</h3>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Data Warehouse</h3>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Data Warehouse</h3>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Data Warehouse</h3>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Data Warehouse</h3>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

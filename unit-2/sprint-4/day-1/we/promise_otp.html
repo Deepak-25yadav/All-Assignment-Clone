@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise_otp</title>
+</head>
+<body>
+       <input type="number" id="otp" placeholder="Enter OTP Here">
+       <button id="btn">Click</button>
+</body>
+<script>
+let btn=document.getElementById("btn");
+let otp=document.getElementById("otp");
+
+btn.addEventListener("click",()=>{
+
+// })
+let actualdata=1234;
+
+let promise= new Promise((resolve,reject)=>{
+
+   setTimeout(()=>{
+    if(actualdata==otp.value)
+    {
+        resolve("OTP Matches");
+    }
+    else{
+        reject("Once again check OTP");
+    }
+
+   },5000)
+
+})
+
+.then((res)=>{
+ alert(res);
+})
+.catch((err)=>{
+    alert(err);
+})
+})
+</script>
+</html>

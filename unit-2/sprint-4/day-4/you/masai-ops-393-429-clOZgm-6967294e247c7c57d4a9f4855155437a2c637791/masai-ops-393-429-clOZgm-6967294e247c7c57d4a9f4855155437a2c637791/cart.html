@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart Page</title>
+  <style>
+    /* Write all necessery css here  */
+    #cart-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      width: 90%;
+      /* border: 2px solid red; */
+      margin: auto;
+      gap: 10px;
+
+    }
+
+    img {
+      width: 100%;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <div class="nav">
+    <h1>Masai E-Commerce</h1>
+    <a href="./index.html">Home</a>
+    <a href="./cart.html">Cart</a>
+  </div>
+  <h1 id="total">Your Total cart Price is:- <span id="cart-total">0</span></h1>
+  <div id="cart-container">
+    <!-- Here Append All the cart Products  -->
+  </div>
+</body>
+<script>
+  // Write all necessery JS here 
+  let cartdata = JSON.parse(localStorage.getItem("cart"));
+  console.log(cartdata);
+  let cart_container = document.getElementById("cart-container");
+  displayCartproducts(cartdata);
+  total(cartdata);
+  function displayCartproducts(cartdata) {
+    let cartTotal=document.getElementById("cart-total");
+    // cartTotal.innerText=50; 
+      cart_container.innerHTML=null;
+    cartdata.forEach((element, index) => {
+      let carddiv = document.createElement("div");
+      let img = document.createElement("img");
+      img.src = element.img;
+      // img.setAttribute("src",element.img);
+      let Brand = document.createElement("h2");
+      Brand.innerText = element.brand;
+      let Price = document.createElement("h3");
+      Price.innerText = element.price;
+      let Details = document.createElement("p");
+      Details.innerText = element.details;
+      let Category = document.createElement("p");
+      Category.innerText = element.category;
+      let increment = document.createElement("button")
+      increment.innerText = "+";
+     increment.addEventListener("click",()=>{
+      element.qty++;
+      // quantity.innerText++;
+      // let cartTotal=document.getElementById("cart-total");
+    // cartTotal.innerText=element.price*(quantity.innerText); 
+    localStorage.setItem("cart",JSON.stringify(cartdata));
+    quantity.innerText =element.qty;
+      total(cartdata);
+
+     })
+      let quantity = document.createElement("span");
+      quantity.innerText =element.qty;
+
+      let decrement = document.createElement("button")
+      decrement.innerText = "-";
+      decrement.addEventListener("click",()=>{
+        // quantity.innerText--;
+        element.qty--;
+        localStorage.setItem("cart",JSON.stringify(cartdata));
+        quantity.innerText =element.qty;
+        total(cartdata);
+      })
+      // let cartTotal=document.getElementById("cart-total");
+      // cartTotal.innerText=(quantity.innerText);     
+
+      let Remove = document.createElement("button")
+      Remove.innerText ="Remove";
+
+      Remove.addEventListener("click",()=>{
+
+      let deleted=cartdata.filter(function(el, i){
+      if(i===index)
+      {
+        return false;
+      }
+      else{
+        return true;
+      }
+      });
+      // cart_container.innerHTML=null;
+         displayCartproducts(deleted);
+         total(deleted);
+        //  if(cartdata.length==0)
+        //  {
+        //   cartTotal.innerText=0;
+        //  }
+
+
+
+        // cartdata.splice(index,1);
+        // cart_container.innerHTML=null;
+        // displayCartproducts(cartdata);
+
+      })
+
+
+
+      carddiv.append(img, Brand, Price, Details, Category, increment, quantity, decrement, Remove);
+      cart_container.append(carddiv);
+    });
+
+  }
+
+
+
+
+  function total(data) {
+    let prise = 0
+    data.forEach((ele, ind) => {
+      prise += ele.price*ele.qty
+    })
+    document.getElementById("cart-total").innerText = prise
+  }
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>

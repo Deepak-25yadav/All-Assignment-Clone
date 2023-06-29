@@ -1,0 +1,30 @@
+let btn = document.createElement("button");
+  btn.innerHTML = "Add to cart";
+
+  btn.addEventListener("click", () => {
+    let cartdata = JSON.parse(localStorage.getItem("cart")) || [];
+    // let cartindex = JSON.parse(localStorage.getItem("ci")) || [];
+       
+    let isalready=false;
+    for(i=0;i<cartdata.length;i++)
+    {
+      if(cartdata[i].id===element.id)
+      {
+        isalready=true;
+        break;
+      }
+    }
+    
+    
+      if (isalready==true) {
+        alert("product already in cart");
+      }
+      else {
+        // cartindex.push(index)
+        alert("Product Added to cart");
+        cartdata.push(element);
+      }
+   
+    // localStorage.setItem("ci", JSON.stringify(cartindex));
+    localStorage.setItem("cart", JSON.stringify(cartdata));
+  })

@@ -1,0 +1,391 @@
+body{
+    /* font-family: sans-serif; */
+    font-family: "Open Sans",sans-serif,Arial,Helvetica;
+ }
+ 
+ #parent {
+    width: 100%;
+    margin: auto;
+    /* font-family: 'Times New Roman', Times, serif; */
+ }
+ 
+ * {
+    margin: 0;
+    padding: 0;
+ }
+ 
+ /* STYLING  STARTING PART OF NAVBAR */
+ 
+ 
+ 
+ #navbar {
+    background-color: aqua;
+    /* border: 2px solid red; */
+    height: fit-content;
+    /* height: 10px; */
+    /* font-family: 'Times New Roman', Times, serif; */
+   font-size: small;
+   font-weight: 100;
+   /* font-style: normal; */
+ }
+ 
+ #usd select {
+    /* display: flex; */
+    /* display: flex;
+       justify-content: flex-end;  */
+    /* background-color: crimson; */
+    justify-content: space-evenly;
+ }
+ 
+ #usd {
+    display: flex;
+    /* justify-content: flex-end; */
+ 
+ }
+ 
+ #usd1 {
+    /* border: 2px solid green; */
+    flex-grow: 1;
+ }
+ 
+ #usd2 {
+    display: block;
+    /* border: 2px solid yellow; */
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* flex-grow: 1; */
+    /* padding: 5px; */
+ }
+ 
+ #usd2 select:hover {
+    border: none;
+    display: block;
+    display: flex;
+    padding: 5px;
+    color: deeppink;
+    cursor: pointer;
+ }
+ 
+ #lbd1 {
+ 
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+ }
+ 
+ #lbd1 img {
+    width: 40%;
+ }
+ 
+ #lbd1 div:nth-child(1) {
+    width: 20%;
+    background-color: aqua;
+ 
+ }
+ 
+ #lbd1 div:nth-child(3) {
+    background-color: aqua;
+ }
+ 
+ #lbd1 div:nth-child(3) select:hover {
+    border: none;
+    cursor: pointer;
+    color: gold;
+ }
+ 
+ #lbd1 div:nth-child(3) button:hover {
+ 
+    cursor: pointer;
+    color: green;
+ 
+ }
+ 
+ #lbd1 div:nth-child(3) button {
+    border: none;
+ }
+ 
+ #lbd1 div:nth-child(3) select {
+    border: none;
+ }
+ 
+ #shipping_address {
+    border: none;
+    outline: none;
+    text-decoration: none;
+ }
+ 
+ #lbd1 div {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: none;
+    outline: none;
+    /* cursor: pointer; */
+ }
+ 
+ #all_categories {
+    border: none;
+    outline: none;
+    border-right: 1px solid black;
+    cursor: pointer;
+ }
+ 
+ #searchbar {
+    border: none;
+    outline: none;
+ }
+ 
+ #search-section>i {
+    color: darkred;
+    padding-right: 20px;
+    padding-top: 5px;
+    /* background-color: coral; */
+ }
+ 
+ 
+ #lbd2 {
+    background-color: aqua;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    justify-content: space-evenly;
+ }
+ 
+ header {
+    display: flex;
+ 
+ }
+ 
+ /* header {
+     display: block;
+     display: flex;
+     justify-content: space-between;
+ } */
+ header ul {
+    display: block;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    justify-content: space-evenly;
+ }
+ 
+ #lbd2 button {
+    /* display: block; */
+    background-color: aqua;
+    border: none;
+    outline: none;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    text-decoration: antiquewhite;
+    /* text-decoration: none  */
+    /* outline: none; */
+ }
+ 
+ #lbd2 button a:hover {
+    color: white;
+ }
+ 
+ #lbd2 button a {
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-decoration-color: aliceblue;
+ }
+ 
+ /* ENDING PART OF NAVBAR STYLING */
+ 
+ 
+ 
+ 
+ /* STYLING  STARTING PART OF PRODUCT CONTAINER */
+ 
+ #product_container{
+    width: 90%;
+    margin: auto;
+    /* border: 2px dashed blue; */
+ }
+ 
+ #allProduct1head{
+    text-align: center;
+ }
+ 
+ #allProduct1{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 100%;
+    gap: 15px;
+    border: 2px solid red;
+    font-size: x-small;
+    font-weight: 100;
+    background-color: #eaeaea;
+ }
+ #allProduct1 div{
+ /* border: 2px solid rgb(0, 255, 106); */
+ box-shadow: inset;
+ box-sizing: border-box;
+ /* background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Flips/Winterflip2/kidsfashion/topscroll/2.jpg"); */
+ }
+ #allProduct1 img{
+    width: 100%;
+ }
+ #productline2cycle img{
+    width: 100%;
+ }
+ #productbabyline{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* width: 100%; */
+    gap: 20px;
+ }
+ #productbabyline img{
+ width: 100%;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* STYLING  STARTING PART OF FOOTER */
+ 
+ #footer {
+    background-color: rgb(216, 237, 239);
+    border: 2px solid black;
+    /* font-family: 'Times New Roman', Times, serif; */
+    
+ }
+ 
+ #layer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: blue;
+    /* border: 2px solid red; */
+    height: 50px;
+ }
+ 
+ 
+ 
+ #layer2 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    /* border: 2px solid black; */
+    height: 60px;
+    align-items: center;
+ }
+ 
+ #layer2 input {
+    width: 300px;
+    height: 30px;
+    /* outline: none; */
+    border-color: blue;
+    border-radius: 4px;
+ }
+ 
+ #layer2 input:hover {
+    cursor: pointer;
+    /* background-color: aqua; */
+    /* border:aqua; */
+ }
+ 
+ #layer2 button {
+    height: 35px;
+    background-color: rgb(17, 117, 171);
+    border: none;
+    width: 100px;
+    border-radius: 3px;
+ }
+ 
+ #layer2 button:hover {
+    background-color: blue;
+    border-radius: 10px;
+    cursor: pointer;
+ }
+ 
+ #layer3 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 70px;
+    /* margin: 40px; */
+    /* border: 2px solid tomato; */
+    width: 100%;
+    font-weight: 100;
+    font-size: small;
+    /* font-family: 'Times New Roman', Times, serif; */
+    
+ }
+ 
+ /* #layer3 div:nth-child(1) {
+    border: 2px solid red;
+ 
+ } */
+ 
+ /* #layer3 div:nth-child(2) {
+    border: 2px solid rgb(255, 238, 0);
+ } */
+ 
+ /* #layer3 div:nth-child(3) {
+    border: 2px solid rgb(98, 0, 255);
+ } */
+ 
+ /* #layer3 div:nth-child(4) {
+    border: 2px solid rgb(0, 255, 13);
+ } */
+ 
+ /* #layer3 div:nth-child(5) {
+    border: 2px solid rgb(255, 0, 208); 
+     display: block;
+ 
+ } */
+ 
+ #layer3 div:nth-child(5) {
+    display: flex;
+    width: 20%;
+ 
+ }
+ 
+ #layer3 div:nth-child(5) div {
+    width: 100%;
+ 
+ }
+ 
+ #layer3 div:nth-child(5) div img {
+    width: 100%;
+ }
+ 
+ #scanapp {
+    display: flex;
+    margin: auto;
+    /* border: 2px solid red; */
+ }
+ 
+ #connect {
+    /* border: 5px solid rgb(0, 255, 30); */
+    background-color: chocolate;
+ }
+ 
+ #layer4 {
+    /* border: 2px solid magenta; */
+    display: flex;
+    justify-content: center;
+ }
+ 
+ #layer5 {
+    /* border: 2px solid blue; */
+    text-align: center;
+ }
+ 
+ 
+ 
+ 
+ 
+ /* ENDING PART OFFOOTER STYLING */

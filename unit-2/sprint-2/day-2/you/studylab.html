@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>studylab</title>
+
+
+    <style>
+     #navbar{
+        display: flex;
+        /* border: 2px solid yellow; */
+        margin: auto;
+        width: 80%;
+        justify-content:space-between;
+     }
+     #navbar div{width: 45%;
+
+     }
+     #navbar>div:nth-child(2){
+        display: flex
+        
+        
+     }
+
+     #navbar>div:nth-child(1){
+    /* background-color: purple; */
+      width: 30%;
+     }
+     #navbar>div:nth-child(2) p{
+        color: skyblue;
+        /* border: 2px solid brown; */
+        justify-content:space-evenly;
+        background-color: aquamarine;
+        width: 100%;
+     }
+
+
+     #outer{
+        display: flex;
+        width: 80%;
+        /* border: 2px solid blue; */
+        margin:auto;
+     }
+     #outer div{
+        width: 48%;
+        /* border: 2px solid green; */
+        margin: auto;
+     }
+
+     #outer>div:nth-child(2) img{
+        width:100%;
+       
+     }
+     #outer>div:nth-child(2){
+        display: flex;
+     }
+     
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div>
+            <h3>StudyLab</h3>
+
+        </div>
+        <div>
+            <p>Home</p>
+            <p>About</p>
+            <p>Course</p>
+            <p>Instructor</p>
+            <p>Blog</p>
+            <p>Contact</p>
+        </div>
+    </nav>
+
+    <div id="outer">
+        <div>
+            <h3>WELCOME TO STUDYLAB</h3>
+            <h1>We Are StudyLab An Online Learning Center</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, optio quos rem excepturi aperiam
+                iusto, quas minima, consequuntur error architecto totam magnam quo quasi suscipit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsa ea quisquam esse sunt. Optio
+                voluptate laborum sequi, temporibus eaque ducimus repellat quod eius consectetur?</p>
+            <img src="data:image/jpeg;base64,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"
+                alt="image not found">
+
+        </div>
+
+        <div>
+            <div><img
+                    src="https://png.pngtree.com/png-vector/20210601/ourmid/pngtree-certified-blue-commercial-rubber-stamp-label-product-png-image_3400922.jpg"
+                    alt="image not found">
+                <h3>Top Quality Content</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, aspernatur.</p>
+            </div>
+            <div><img
+                    src="https://png.pngtree.com/png-vector/20210601/ourmid/pngtree-certified-blue-commercial-rubber-stamp-label-product-png-image_3400922.jpg"
+                    alt="image not found">
+                <h3>Top Quality Content</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, aspernatur.</p>
+            </div>
+            <div><img
+                    src="https://png.pngtree.com/png-vector/20210601/ourmid/pngtree-certified-blue-commercial-rubber-stamp-label-product-png-image_3400922.jpg"
+                    alt="image not found">
+                <h3>Top Quality Content</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, aspernatur.</p>
+            </div>
+            <div><img
+                    src="https://png.pngtree.com/png-vector/20210601/ourmid/pngtree-certified-blue-commercial-rubber-stamp-label-product-png-image_3400922.jpg"
+                    alt="image not found">
+                <h3>Top Quality Content</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, aspernatur.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

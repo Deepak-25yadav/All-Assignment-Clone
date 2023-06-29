@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+fetch("https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-tech-products")
+    .then((responseObject) => {
+      return responseObject.json();
+    })
+    .then((actualData) => {
+      console.log(actualData);
+      bag = actualData.data;
+      displayproducts(actualData.data);
+
+    })
+    .catch((error) => {
+      console.log(error);
+    })
+
+
+
+     function displayproducts(data){
+
+
+       
+
+     }
+
+
+
+</script>
+</html>

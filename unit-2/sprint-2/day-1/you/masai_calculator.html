@@ -1,0 +1,196 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai_Calculator</title>
+
+     <style>
+        
+        #parent{
+                
+            display: grid;
+            /* grid-template-columns: repeat(4,1fr); */
+            background-color:white;
+            border: 1px solid red;
+            width:30%;
+            gap: 20px 40px;
+            margin: 4000px 600px 4000px 600px;
+            padding: 150px;
+            /* padding-left: 300px; */
+            padding-right: 400px;
+            position: relative;
+            right: 50px;
+            
+            margin: auto;
+            margin-left: 120px;
+            grid-template-areas: "disp disp disp disp"
+                                 "two three four fourteen"
+                                 "five six seven fifteen"
+                                 "eight nine ten sixteen "
+                                 "twelve eleven thirteen seventeen"
+        }
+        #parent>div{
+            border-radius:4px;
+            width: 30%;
+            padding: 55px;
+            position: relative;
+            right: 10px;
+            margin: auto;
+            font-size:25px ;
+            height: 10px;
+            position: relative;
+            right: 40px;
+        }
+        #parent>div>h3{
+             position: relative;
+             bottom: 40px;
+
+        }
+     
+        #parent>div:nth-child(1)
+        {
+            background-color: aqua;
+            grid-area:disp;
+            border: 1px solid black;
+            width: 80%;
+            box-shadow: rgba(188, 182, 182, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        }
+        #parent>div:nth-child(2)
+        {
+             background-color:white; 
+            grid-area:two;
+            box-shadow: rgba(188, 182, 182, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        }
+        #parent>div:nth-child(3)
+        {
+            background-color: rgb(0, 255, 166);
+            grid-area:three;
+            box-shadow: rgba(188, 182, 182, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        }
+        #parent>div:nth-child(4)
+        {
+            background-color: rgb(255, 166, 0);
+            grid-area:four;
+            box-shadow: rgba(188, 182, 182, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        }
+        #parent>div:nth-child(5)
+        {
+            background-color: rgb(51, 0, 255);
+            grid-area:five;
+            box-shadow: rgba(188, 182, 182, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        }
+        #parent>div:nth-child(6)
+        {
+            background-color: rgb(228, 81, 22);
+            grid-area:six;
+            box-shadow: rgba(188, 182, 182, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        }
+        #parent>div:nth-child(7)
+        {
+            background-color: rgb(136, 12, 113);
+            grid-area:seven;
+            box-shadow: rgba(188, 182, 182, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        }
+        #parent>div:nth-child(8)
+        {
+            background-color: rgb(170, 19, 19);
+            grid-area:eight;
+            box-shadow: rgba(188, 182, 182, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        }
+        #parent>div:nth-child(9)
+        {
+            background-color: rgb(215, 124, 11);
+            grid-area:nine;
+            box-shadow: rgba(188, 182, 182, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        }
+        #parent>div:nth-child(10)
+        {
+            background-color: rgb(5, 86, 86);
+            grid-area:ten;
+            box-shadow: rgba(188, 182, 182, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        }
+        #parent>div:nth-child(11)
+        {
+            background-color: rgb(89, 0, 255);
+            grid-area:eleven;
+            box-shadow: rgba(188, 182, 182, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        }
+        #parent>div:nth-child(12)
+        {
+            background-color:red;
+            color: white;
+            grid-area:twelve;
+            box-shadow: rgba(188, 182, 182, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        }
+        #parent>div:nth-child(13)
+        {
+            background-color:black;
+            color: white;
+            grid-area:thirteen;
+            box-shadow: rgba(188, 182, 182, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        }
+        #parent>div:nth-child(14)
+        {
+            background-color:black;
+            color: white;
+            grid-area:fourteen;
+            box-shadow: rgba(188, 182, 182, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        }
+        #parent>div:nth-child(15)
+        {
+            background-color:black;
+            color: white;
+            grid-area:fifteen;
+            box-shadow: rgba(188, 182, 182, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        }
+        #parent>div:nth-child(16)
+        {
+            background-color:black;
+            color: white;
+            grid-area:sixteen;
+            box-shadow: rgba(188, 182, 182, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        }
+        #parent>div:nth-child(17)
+        {
+            background-color:black;
+            color: white;
+            grid-area:seventeen;
+            box-shadow: rgba(188, 182, 182, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        }
+        h1{
+            text-align: center;
+            font-size: 80px;
+        }
+     
+
+     </style>
+
+
+</head>
+<body>
+    <h1> Masai Calculator</h1>
+    <div id="parent">
+        <div><h3></h3></div>
+        <div><h3>1</h3></div>
+        <div><h3>2</h3></div>
+        <div><h3>3</h3></div>
+        <div><h3>4</h3></div>
+        <div><h3>5</h3></div>
+        <div><h3>6</h3></div>
+        <div><h3>7</h3></div>
+        <div><h3>8</h3></div>
+        <div><h3>9</h3></div>
+        <div><h3>0</h3></div>
+        <div><h3>c</h3></div>
+        <div><h3>=</h3></div>
+        <div><h3>+</h3></div>
+        <div><h3>-</h3></div>
+        <div><h3>*</h3></div>
+        <div><h3>/</h3></div>
+    </div>
+</body>
+</html>
