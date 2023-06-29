@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <style>
+      /* All Your css for Home page goes here  */
+      #menu-container{
+        display: grid;
+      grid-template-columns: repeat(4,1fr);
+       width: 90%;
+       margin: auto;
+       gap: 5px;
+      }
+       img{
+        width: 100%;
+       }
+     
+    </style>
+  </head>
+
+  <body>
+    <div class="nav">
+      <h1>Web Coffee Shop Menu</h1>
+      <a href="./index.html">Home</a>
+      <a href="./order.html">Ordered</a>
+    </div>
+    <div id="filter">
+      <input type="number" id="lower" />
+      <input type="number" id="upper" />
+      <button id="filter-btn">Filter</button>
+    </div>
+    <select id="sort">
+      <option value="">Sort By Price</option>
+      <option value="asc">Ascending</option>
+      <option value="desc">Descending</option>
+    </select>
+    <h1 id="alert"></h1>
+    <div id="menu-container">
+      etch
+      <!-- Here Append All the Items  -->
+    </div>
+  </body>
+
+  <script>
+    // All your JS code for Home Page goes here
+    const url = `https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-coffee`;
+    fetch(url)
+    .then((res)=>{return res.json()})
+    .then((Data)=>{
+      // console.log(Data.data);
+        // let arr1=Data.data
+        // console.log(arr1);
+        myfilter(Data.data)
+      home(Data.data);
+
+    })
+
+      let mc=document.getElementById("menu-container");
+
+    function home(arr){
+  // console.log(arr)
+       arr.forEach((element,index)=>{
+          // console.log(element)
+         let carddiv=document.createElement("div");
+         
+         let img=document.createElement("img");
+         img.src=element.image;
+        
+         let title=document.createElement("h3");
+         title.textContent=element.title;
+
+        
+
+         let description=document.createElement("p");
+         description.textContent=element.description;
+
+         let price=document.createElement("h5")
+            price.textContent=element.price;
+            
+       carddiv.append(img,title,description,price);
+
+            mc.append(carddiv);
+            
+       })
+    }
+
+
+    let low=document.getElementById("lower").value;
+    console.log(low);
+    let up=document.getElementById("upper").value;
+    
+
+
+    let dofilter=document.getElementById("filter-btn");
+
+  function myfilter(arr1,low,up){
+
+
+
+
+   dofilter.addEventListener("click",()=>{
+    let afterfilter=arr1.filter(function(element,index){  
+      // console.log(element.price);
+      // console.log(element);
+      // console.log(x);
+      // console.log(up);
+      if(element.price>=low && element.price<=up)
+      {
+       return true;
+      }
+      else{
+        return false;
+      }
+    })  
+    mc.innerHTML=null;
+    home(afterfilter);
+   })
+  }
+
+
+
+
+
+
+
+
+//     function filter(arr1){
+//       console.log(arr1);
+//       filterBtn.addEventListener("cleck",()=>{ 
+
+// })
+//     }
+
+    
+
+
+
+
+
+
+
+
+  </script>
+</html>
